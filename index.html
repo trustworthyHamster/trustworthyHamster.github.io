@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мои лендинги</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<meta name="theme-color" content="#0e1116">
+<style>
+  :root{
+    --bg:#0e1116;
+    --card:#171b22;
+    --card2:#1d222a;
+    --ink:#e8ecf1;
+    --muted:#8b95a3;
+    --accent:#5b9dff;
+    --line:#252b35;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:32px 16px;
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
+    background:var(--bg);
+    background-image:radial-gradient(circle at 50% 0%,#1b2431 0%,transparent 60%);
+    color:var(--ink);
+  }
+  .wrap{width:100%;max-width:640px}
+  h1{font-size:26px;margin:0 0 6px;letter-spacing:-.02em}
+  .sub{color:var(--muted);margin:0 0 28px;font-size:15px}
+  ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+  a.item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    padding:18px 20px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    text-decoration:none;
+    color:var(--ink);
+    transition:background .15s ease, border-color .15s ease, transform .15s ease;
+  }
+  a.item:hover{
+    background:var(--card2);
+    border-color:var(--accent);
+    transform:translateY(-1px);
+  }
+  .title{display:block;font-size:16px;font-weight:600}
+  .desc{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+  .arrow{color:var(--accent);font-size:18px;flex-shrink:0}
+  footer{margin-top:28px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Мои лендинги</h1>
+    <p class="sub">Личные страницы, доступные по ссылке с любого устройства.</p>
+
+    <ul>
+      <li>
+        <a class="item" href="./pension-planner/">
+          <span>
+            <span class="title">Пенсионный симулятор</span>
+            <span class="desc">Накопления, проценты и допустимые траты на пенсии</span>
+          </span>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+    </ul>
+
+    <footer>Страницы обновляются автоматически после отправки изменений в репозиторий.</footer>
+  </div>
+</body>
+</html>
